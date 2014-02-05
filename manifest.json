@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "CollegiateLink Roster Scraper",
+  "description": "Scrapes the names and e-mails of people on the roster page in CollegiateLink and saves them in a CSV file.",
+  "version": "1.0",
+  "page_action": {
+    "default_icon": {
+      "19": "icons/icon.png",
+      "38": "icons/icon@2x.png"
+    },
+    "default_title": "Scrape roster page"
+  },
+  "icons": {
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "tabs",
+    "https://portfolio.wustl.edu/"
+  ]
+}

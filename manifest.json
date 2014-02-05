@@ -3,6 +3,10 @@
   "name": "CollegiateLink Roster Scraper",
   "description": "Scrapes the names and e-mails of people on the roster page in CollegiateLink and saves them in a CSV file.",
   "version": "1.0",
+  "permissions": [
+    "tabs",
+    "https://portfolio.wustl.edu/"
+  ],
   "page_action": {
     "default_icon": {
       "19": "icons/icon.png",
@@ -17,9 +21,5 @@
   "background": {
     "scripts": ["background.js"],
     "persistent": false
-  },
-  "permissions": [
-    "tabs",
-    "https://portfolio.wustl.edu/"
-  ]
+  }
 }
